@@ -1,0 +1,129 @@
+a:hover{
+    border-bottom: 2px solid blue;
+}
+a:link{
+    color:green
+}
+a:visited{
+    color: red;
+}
+a:active{
+    color:rgb(40, 52, 226);
+}
+.class1{
+    margin-top: 30px;
+}
+.class2{
+    text-decoration: none;
+}
+.class3{
+    text-decoration: none;
+
+}
+.class3:hover{
+    border-bottom: 2px solid blue;
+}
+
+.class4{
+
+    background: url(tick.png) no-repeat 0 1px;
+    padding-left: 20px;
+}
+body{
+    background:linear-gradient(#d4fa7d, #E8D9A9) fixed;
+}
+
+input{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 10px 10px 10px;
+    border: 2px black solid;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(255, 0, 0);
+}
+.mainlabel{
+    display: block;
+    font-family: cursive;
+    font-size: 30px;
+    color: rgb(101, 5, 190);
+}
+.inp{
+    width: 30%;
+    padding: 1px 10px;
+}
+
+input:required:valid{
+    background-color: green;
+}
+
+input:required:invalid{
+background-color: rgb(194, 128, 128);
+}
+
+button{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 10px 10px 10px;
+    border: 2px black solid;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(255, 0, 0);
+}
+
+button:hover{
+    background-color: rgb(138, 159, 218);
+}
+
+button:active{
+    background-color: rgb(35, 172, 92);
+}
+button:focus{
+    border: 3px solid blue;
+}
+
+.searchbtn{
+    width: 5%;
+    padding: 12px 2px;
+    margin-left: 1px;
+  
+    
+}
+#ls{
+    display: flex;
+    justify-content: space-between;
+    color: red;
+    width: 30%;
+    font-size: 20px;
+    padding: 0px 0px 10px 30px;
+}
+p{
+    padding: 12px 20px;
+    font-size: 30px;
+    margin: 0px;
+}
+progress{
+    width: 30%;
+    padding: 15px;
+    margin: 0px 0px 10px 20px;
+}
+meter{
+    width: 30%;
+    
+    margin: 0px 0px 10px 20px;
+}
+textarea{
+    margin-left: 10px;
+}
+.communication{
+    width: 5%;
+    margin-left: 500px;
+    padding: 12px 5px;
+    box-shadow: 5px 5px 10px rgb(40, 52, 226);
+}
+h1{
+    text-align: center;
+    color: brown;
+}
+img{
+    width: 70%;
+    margin-left: 250px;
+}

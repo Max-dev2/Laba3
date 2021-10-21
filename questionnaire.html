@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <form action="submit.html">
+        <fieldset>
+            <legend>Анкетні дані</legend>
+            <label class="mainlabel" for="field1">1. Введіть своє прізвище та ім'я</label>
+            <input type="text" id="field1" placeholder="Фуштей Максим">
+
+            <label class="mainlabel" for="field2">2. Введіть ваш email</label>
+            <input type="email" id="field2" autocomplete="off" required
+                pattern="([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4})" placeholder="maxym@gmail.com">
+
+            <label class="mainlabel" for="field3">3. Введіть ваш номер телефону</label>
+            <input type="tel" id="field3" pattern="(\+380[0-9]{9})" placeholder="+380964576891" required>
+
+            <label class="mainlabel" for="field4">4. Введіть сайт нашого інтернет-магазину</label>
+            <input type="url" id="field4" pattern="https://.*" placeholder="https://example.com" required>
+
+            <label class="mainlabel" for="field5">5. Введіть пароль від нашого інтернет-магазину</label>
+            <input type="password" id="field5" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}"
+                placeholder="W1er23F" required>
+
+            <label class="mainlabel" for="field6">6. Введіть ваш вік</label>
+            <input type="number" id="field6" min="1" max="100" placeholder="18">
+        </fieldset>
+
+        <fieldset>
+            <legend>Вибір дат</legend>
+
+            <label class="mainlabel" for="field8">7. Введіть дату реєстрації у нашому магазині</label>
+            <input type="date" id="field8">
+
+            <label class="mainlabel" for="field9">7. Введіть дату і час першої покупки в нашому магазині</label>
+            <input type="datetime-local" id="field9">
+
+            <label class="mainlabel" for="field10">9. Виберіть місяць і тиждень останньої покупки</label>
+            <input type="month" id="field10">
+            <input type="week" id="field10">
+
+            <label class="mainlabel" for="field11">10. Виберіть зручний для вас час, щоб наш менеджер зв'язався з
+                вами</label>
+            <input type="time" id="field11">
+        </fieldset>
+        <fieldset>
+            <legend>Дані для статистики</legend>
+
+            <label class="mainlabel" for="field12">11. Якого кольору було ваше останнє замовлення?</label>
+            <input class="inp" type="color" id="field12">
+
+            <label class="mainlabel" for="field13">12. По якій причині ви зайшли в наш інтернет-магазин</label>
+            <input list="field13">
+            <datalist id="field13">
+                <option value="Пошук певного товару"></option>
+                <option value="Порівняння цін"></option>
+                <option value="Отримання певної інформації"></option>
+                <option value="Перегляд товару"></option>
+            </datalist>
+
+            <label class="mainlabel" for="field7">13. Оцініть наше обслуговування</label>
+            <input type="range" min="1" max="5" id="field7" list="ls">
+            <datalist id="ls">
+                <option value="1" label="1"></option>
+                <option value="2" label="2"></option>
+                <option value="3" label="3"></option>
+                <option value="4" label="4"></option>
+                <option value="5" label="5"></option>
+            </datalist>
+            <fieldset>
+                <p>70% користувачів поставили нам 5 балів</p>
+                <progress max="100" value="70"> 70 </progress>
+                <br>
+                <meter max="100" value="70"></meter>
+            </fieldset class="fieldset1">
+
+            <label class="mainlabel" for="field14">14. Щоб ви хотіли знайти?</label>
+            <input type="search" id="field14">
+            <button class="searchbtn">Search</button>
+
+            <label class="mainlabel" for="field12">15. Щоб ви хотіли покращити у нашому інтернет-магазині</label>
+            <textarea name="" id="" cols="50" rows="3" spellcheck="false" maxlength="150"></textarea>
+        </fieldset>
+        
+
+        <button type="submit">Надіслати анкету</button>
+        <button type="reset">Очистити анкету</button>
+        <button class="communication" type="button" onclick='location.href="https://web.telegram.org/k/"'>Соцмережі</button>
+    </form>
+</body>
+
+</html>
